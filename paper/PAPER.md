@@ -20,11 +20,11 @@ Bandits model decision-making under uncertainty with minimal structure. Theory g
 | GittinsEval (2026-09-22) | Cost-aware Gittins, 1–2% cost ≈ zero simple regret → simple-regret framing + cost_bps |
 | Walk-forward trading FW (2026-08-24, research) | Rolling folds, costs, p=0.34 reported honestly, regime split → exp04 design |
 | OBP/ZOZOTOWN (2020, research) | Logged propensities + OPE → Bernoulli-ized rewards, CSV evidence |
-| Docker SLR 5298 builds (2026-01, agent-reach) | Pin base+deps; Dockerfile≠image → pinned Dockerfile + evidence JSON |
-| LinUCB notes (openresearch) / Slivkins monograph (openalex) | `Õ(d√T)` vs `O(d√T)` realizability; Exp4 `O(d√T)` adversarial → cite in §3 |
+| Docker reproducibility SLR, 5298 builds (2026-01) | Pin base+deps; Dockerfile≠image → pinned Dockerfile + evidence JSON |
+| LinUCB lecture notes / Slivkins monograph (2019) | `Õ(d√T)` vs `O(d√T)` realizability; Exp4 `O(d√T)` adversarial → cite in §3 |
 | Kaggle MAB dataset (2026-04) / Wiki MAB | Confirms Bernoulli-IID standard; history Thompson(1933)→Robbins(1952)→Auer→L&S |
 
-Polling was sequential (one search at a time, 429-safe), keywords varied per tool as logged in session.
+Literature was surveyed sequentially with varied keywords per source, one query at a time with retries on rate limits.
 
 ## 3 Theory (compressed, with pointers to code)
 Stochastic regret `R_n=nμ*−E[ΣX_t]`, decomposition `R_n=ΣΔ_a E[T_a]` (Lemma 4.5). Subgaussian tail `P(μ̂−μ≥ε)≤exp(−nε²/2σ²)` (Cor.5.5) → UCB index `μ̂+√(2log(1/δ)/T)` (7.2). ETC Thm 6.1 tradeoff; UCB Thm 7.1/7.2; UCB* Thm 8.1 `2/Δ`; MOSS Thm 9.1 minimax; KL-UCB `d(p,q)` Thm 10.6; Exp3 loss-IX (11.6) Thm 11.2; IX Thm 12.1; LinUCB `θ̂=V⁻¹b`, `β` Thm 20.5, regret Thm 19.2 via elliptical potential Lemma 19.4; lower bounds Thm 15.2 `Ω(√(k−1)n)`, Thm 24.1 `Ω(d√n)`, Cor 25.2 + optimism counterexample §25.2; non-stationary tracking Ch.31; TS Ch.36 Thm 36.1/36.3.
