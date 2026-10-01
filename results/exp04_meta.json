@@ -1,0 +1,14 @@
+{
+  "live_source": "yfinance+coingecko",
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "AMZN",
+    "META"
+  ],
+  "folds": 4,
+  "cost_bps": 5.0,
+  "lookahead": "none: test hindsight only for scoring, never for decisions",
+  "note": "Aggregate p-values unadjusted; see PAPER.md for multiple-testing caveats."
+}

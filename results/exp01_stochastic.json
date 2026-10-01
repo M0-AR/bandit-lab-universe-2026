@@ -1,0 +1,262 @@
+{
+  "bern_easy": {
+    "ETC-m50": {
+      "mean_regret": 79.1,
+      "std_regret": 213.78702018597855,
+      "mean_pseudo": 73.49999999999999,
+      "var95": 131.00000000000065,
+      "theory": "Thm6.1 O(sqrt n) only if m tuned; else n^{2/3}"
+    },
+    "UCB-1/n2": {
+      "mean_regret": 151.45,
+      "std_regret": 32.348840782939966,
+      "mean_pseudo": 151.64999999999998,
+      "var95": 221.1,
+      "theory": "Thm7.1 sum 16log n/Delta; worst O(sqrt(nk log n))"
+    },
+    "UCB*": {
+      "mean_regret": 130.25,
+      "std_regret": 24.508926945094924,
+      "mean_pseudo": 126.87499999999997,
+      "var95": 175.45000000000002,
+      "theory": "Thm8.1 limsup R/log n <= sum 2/Delta (asymptotically optimal)"
+    },
+    "MOSS": {
+      "mean_regret": 85.45,
+      "std_regret": 29.26683276338593,
+      "mean_pseudo": 85.70999999999998,
+      "var95": 139.70000000000002,
+      "theory": "Thm9.1 O(sqrt(nk)) minimax optimal"
+    },
+    "KL-UCB": {
+      "mean_regret": 38.55,
+      "std_regret": 23.506328934991103,
+      "mean_pseudo": 34.35999999999999,
+      "var95": 72.65,
+      "theory": "Thm10.6 limsup R/log n <= sum Delta/d(mu,mu*) (Bernoulli-optimal)"
+    },
+    "Exp3": {
+      "mean_regret": 117.55,
+      "std_regret": 45.75092895231746,
+      "mean_pseudo": 110.285,
+      "var95": 195.25,
+      "theory": "Thm11.2 O(sqrt(nk log k)) adversarial->stochastic reduction"
+    },
+    "Exp3-IX": {
+      "mean_regret": 129.2,
+      "std_regret": 46.635394283741185,
+      "mean_pseudo": 120.05999999999997,
+      "var95": 207.15,
+      "theory": "Thm12.1 high-prob O(sqrt(nk log(k/delta)))"
+    },
+    "TS-Bern": {
+      "mean_regret": 23.7,
+      "std_regret": 20.388967605055438,
+      "mean_pseudo": 18.899999999999995,
+      "var95": 60.2,
+      "theory": "Bayes O(sqrt(nk log n)); frequentist asymptotically optimal (Bern)"
+    },
+    "TS-Gauss": {
+      "mean_regret": 48.0,
+      "std_regret": 28.374284131938907,
+      "mean_pseudo": 52.69499999999998,
+      "var95": 87.2,
+      "theory": "Thm36.3 asymptotically optimal Gaussian"
+    }
+  },
+  "bern_hard": {
+    "ETC-m50": {
+      "mean_regret": 75.65,
+      "std_regret": 115.0939941960483,
+      "mean_pseudo": 71.47500000000005,
+      "var95": 300.1,
+      "theory": "Thm6.1 O(sqrt n) only if m tuned; else n^{2/3}"
+    },
+    "UCB-1/n2": {
+      "mean_regret": 145.35,
+      "std_regret": 36.46131511616113,
+      "mean_pseudo": 138.5000000000001,
+      "var95": 196.45000000000002,
+      "theory": "Thm7.1 sum 16log n/Delta; worst O(sqrt(nk log n))"
+    },
+    "UCB*": {
+      "mean_regret": 134.85,
+      "std_regret": 33.562292829900635,
+      "mean_pseudo": 125.24600000000012,
+      "var95": 184.10000000000002,
+      "theory": "Thm8.1 limsup R/log n <= sum 2/Delta (asymptotically optimal)"
+    },
+    "MOSS": {
+      "mean_regret": 110.4,
+      "std_regret": 41.28728617867733,
+      "mean_pseudo": 104.35550000000009,
+      "var95": 162.75000000000003,
+      "theory": "Thm9.1 O(sqrt(nk)) minimax optimal"
+    },
+    "KL-UCB": {
+      "mean_regret": 84.8,
+      "std_regret": 40.76591713674549,
+      "mean_pseudo": 79.70200000000008,
+      "var95": 152.5,
+      "theory": "Thm10.6 limsup R/log n <= sum Delta/d(mu,mu*) (Bernoulli-optimal)"
+    },
+    "Exp3": {
+      "mean_regret": 103.85,
+      "std_regret": 43.83066848680271,
+      "mean_pseudo": 97.7135000000001,
+      "var95": 188.1,
+      "theory": "Thm11.2 O(sqrt(nk log k)) adversarial->stochastic reduction"
+    },
+    "Exp3-IX": {
+      "mean_regret": 112.65,
+      "std_regret": 46.30472438099594,
+      "mean_pseudo": 106.18500000000009,
+      "var95": 194.70000000000002,
+      "theory": "Thm12.1 high-prob O(sqrt(nk log(k/delta)))"
+    },
+    "TS-Bern": {
+      "mean_regret": 37.6,
+      "std_regret": 45.51307504443091,
+      "mean_pseudo": 46.95500000000005,
+      "var95": 119.1,
+      "theory": "Bayes O(sqrt(nk log n)); frequentist asymptotically optimal (Bern)"
+    },
+    "TS-Gauss": {
+      "mean_regret": 82.9,
+      "std_regret": 38.04720751908082,
+      "mean_pseudo": 82.25450000000008,
+      "var95": 144.0,
+      "theory": "Thm36.3 asymptotically optimal Gaussian"
+    }
+  },
+  "gauss_2arm": {
+    "ETC-m50": {
+      "mean_regret": 180.40104873110494,
+      "std_regret": 251.64484410276043,
+      "mean_pseudo": 176.49999999999994,
+      "var95": 543.8493308747163,
+      "theory": "Thm6.1 O(sqrt n) only if m tuned; else n^{2/3}"
+    },
+    "UCB-1/n2": {
+      "mean_regret": 86.42473554312849,
+      "std_regret": 56.30497868176222,
+      "mean_pseudo": 82.55499999999998,
+      "var95": 165.9167630060212,
+      "theory": "Thm7.1 sum 16log n/Delta; worst O(sqrt(nk log n))"
+    },
+    "UCB*": {
+      "mean_regret": 93.90604873110492,
+      "std_regret": 66.62398509162003,
+      "mean_pseudo": 90.00499999999997,
+      "var95": 182.0192586331307,
+      "theory": "Thm8.1 limsup R/log n <= sum 2/Delta (asymptotically optimal)"
+    },
+    "MOSS": {
+      "mean_regret": 71.521048731105,
+      "std_regret": 73.51382454550252,
+      "mean_pseudo": 67.61999999999998,
+      "var95": 173.69151425108814,
+      "theory": "Thm9.1 O(sqrt(nk)) minimax optimal"
+    },
+    "KL-UCB": {
+      "mean_regret": 71.25075876734977,
+      "std_regret": 136.6912256403678,
+      "mean_pseudo": 67.30999999999999,
+      "var95": 290.51023145466905,
+      "theory": "Thm10.6 limsup R/log n <= sum Delta/d(mu,mu*) (Bernoulli-optimal)"
+    },
+    "Exp3": {
+      "mean_regret": 77.01190762141366,
+      "std_regret": 71.40643122960732,
+      "mean_pseudo": 74.83499999999998,
+      "var95": 175.40412311530048,
+      "theory": "Thm11.2 O(sqrt(nk log k)) adversarial->stochastic reduction"
+    },
+    "Exp3-IX": {
+      "mean_regret": 74.98190762141378,
+      "std_regret": 79.06800389155643,
+      "mean_pseudo": 72.80499999999999,
+      "var95": 192.06912311530058,
+      "theory": "Thm12.1 high-prob O(sqrt(nk log(k/delta)))"
+    },
+    "TS-Bern": {
+      "mean_regret": 79.14713624360272,
+      "std_regret": 71.14721392193768,
+      "mean_pseudo": 62.11499999999999,
+      "var95": 199.9983510689499,
+      "theory": "Bayes O(sqrt(nk log n)); frequentist asymptotically optimal (Bern)"
+    },
+    "TS-Gauss": {
+      "mean_regret": 45.58183970761388,
+      "std_regret": 128.0808486685159,
+      "mean_pseudo": 58.894999999999996,
+      "var95": 172.10121355580662,
+      "theory": "Thm36.3 asymptotically optimal Gaussian"
+    }
+  },
+  "gauss_5arm": {
+    "ETC-m50": {
+      "mean_regret": 343.9010487311049,
+      "std_regret": 474.2251360717301,
+      "mean_pseudo": 340.0000000000001,
+      "var95": 1069.3508846500988,
+      "theory": "Thm6.1 O(sqrt n) only if m tuned; else n^{2/3}"
+    },
+    "UCB-1/n2": {
+      "mean_regret": 270.5304223553027,
+      "std_regret": 60.080425898418326,
+      "mean_pseudo": 266.18500000000006,
+      "var95": 399.97141177873436,
+      "theory": "Thm7.1 sum 16log n/Delta; worst O(sqrt(nk log n))"
+    },
+    "UCB*": {
+      "mean_regret": 227.27604873110477,
+      "std_regret": 76.9889323697594,
+      "mean_pseudo": 223.37500000000006,
+      "var95": 333.5208846500987,
+      "theory": "Thm8.1 limsup R/log n <= sum 2/Delta (asymptotically optimal)"
+    },
+    "MOSS": {
+      "mean_regret": 149.9060487311047,
+      "std_regret": 79.55046969605534,
+      "mean_pseudo": 146.00500000000005,
+      "var95": 237.33088465009862,
+      "theory": "Thm9.1 O(sqrt(nk)) minimax optimal"
+    },
+    "KL-UCB": {
+      "mean_regret": 72.76715939177521,
+      "std_regret": 78.27043600892779,
+      "mean_pseudo": 68.57500000000002,
+      "var95": 201.70514619585043,
+      "theory": "Thm10.6 limsup R/log n <= sum Delta/d(mu,mu*) (Bernoulli-optimal)"
+    },
+    "Exp3": {
+      "mean_regret": 325.6669076214137,
+      "std_regret": 172.46464244317764,
+      "mean_pseudo": 323.49000000000007,
+      "var95": 695.0729200873127,
+      "theory": "Thm11.2 O(sqrt(nk log k)) adversarial->stochastic reduction"
+    },
+    "Exp3-IX": {
+      "mean_regret": 245.09690762141355,
+      "std_regret": 94.60837738041278,
+      "mean_pseudo": 242.92000000000007,
+      "var95": 376.2812296027911,
+      "theory": "Thm12.1 high-prob O(sqrt(nk log(k/delta)))"
+    },
+    "TS-Bern": {
+      "mean_regret": 157.08215513924836,
+      "std_regret": 102.67211142614723,
+      "mean_pseudo": 156.29000000000005,
+      "var95": 317.66701187681446,
+      "theory": "Bayes O(sqrt(nk log n)); frequentist asymptotically optimal (Bern)"
+    },
+    "TS-Gauss": {
+      "mean_regret": 105.67734978188878,
+      "std_regret": 63.54314019623911,
+      "mean_pseudo": 100.35,
+      "var95": 191.9885374215572,
+      "theory": "Thm36.3 asymptotically optimal Gaussian"
+    }
+  }
+}

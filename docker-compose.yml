@@ -1,0 +1,19 @@
+services:
+  lab:
+    build: .
+    image: bandit-lab-universe:1.0.0
+    volumes:
+      - ./results:/lab/results
+      - ./data:/lab/data
+    working_dir: /lab
+    environment:
+      PYTHONPATH: /lab/src
+      TZ: UTC
+    command: bash -lc "pytest -q tests/ && python experiments/exp01_stochastic.py && python experiments/exp02_adversarial.py && python experiments/exp03_linear.py && python experiments/exp04_live_market.py --synthetic && python experiments/exp05_hidden_patterns.py"
+
+  paper:
+    image: bandit-lab-universe:1.0.0
+    depends_on: [lab]
+    volumes:
+      - ./results:/lab/results
+    command: bash -lc "ls -lh results/ && cat results/exp05_hidden_patterns.json"

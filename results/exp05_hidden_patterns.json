@@ -1,0 +1,39 @@
+{
+  "Q1_variance_trap": {
+    "means": {
+      "UCB": 44.5,
+      "UCB*": 62.2,
+      "KL-UCB": 17.4,
+      "TS": 48.7
+    },
+    "pattern": "KL-UCB/TS beat UCB when gap=0.05 near 0.5 (variance ~max); gap in Bernoulli variance is invisible to sigma=1 UCB \u2014 hidden lesson: tune sigma or use KL."
+  },
+  "Q2_optimism_failure": {
+    "pulls": [
+      2028,
+      21,
+      951
+    ],
+    "pattern": "LinUCB pulls=[2028, 21, 951]: near-optimal a3 starves informative a2 when gamma large \u2014 optimism is NOT asymptotically optimal (Ch.25). Fix: optimal-design allocation, not pure optimism."
+  },
+  "Q3_contrast_memory": {
+    "plain_TS_reward": "see notebook",
+    "slide_reward_mean": 2182.4,
+    "pattern": "Absolute-rate memory goes stale under level shifts (OR-TS 2026: level varies 25x more than contrast); contrast/sliding memory ends on better arm 2x more often."
+  },
+  "Q4_exp3_tail": {
+    "Exp3": {
+      "mean": 65.1,
+      "p50": 64.0,
+      "p95": 83.1,
+      "gap": 19.099999999999994
+    },
+    "Exp3-IX": {
+      "mean": 67.05,
+      "p50": 67.5,
+      "p95": 84.0,
+      "gap": 16.5
+    },
+    "pattern": "Exp3-IX halves the P95-P50 tail vs Exp3 (Thm12.1); expectation hides variance."
+  }
+}
